@@ -5,13 +5,85 @@
     <meta charset="UTF-8">     <!-- charset define a codificação do site. pt-BR utiliza UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- viewport define a responsividade do site-->
     <link rel="stylesheet" href="styles.css"> <!-- linka o arquivo CSS ao HTML-->
+    <style>
+        /* Comentários em CSS são feitos desta forma */
+        /* CSS interno pode ser escrito aqui */
+        body{   
+            background-color: #FFF; /* define a cor de fundo do site */
+            font-family: Arial, sans-serif; /* define a fonte do site */
+            color: #000; /* define a cor do texto do site */
+        }
+    </style>
+    <script>
+        // Comentários em JavaScript são feitos desta forma
+        /* Comentários em JavaScript também podem ser feitos desta forma */
+        // JavaScript interno pode ser escrito aqui
+        function escreverNome(){
+            nome.innerHTML = "Nome alterado via JavaScript!"; // innerHTML altera o conteúdo HTML do elemento selecionado
+        }
+        window.onload = escreverNome; // window.onload executa a função quando a página é carregada
+    </script>
+        
 </head>
 <body> <!-- body define o conteúdo do site-->
-    <h1>Título 1</h1> <!-- a tag <h1> define títulos, indo até <h3> -->
+    <h1>Título 1</h1> <!-- a tag <h1> define títulos, indo até <h6> -->
     <p>Olá, mundo!</p> <!-- a tag <p> define um parágrafo-->    
     <nbsp>Este é um espaço não  quebrável.</nbsp> <!-- <nbsp> cria um espaço que obrigatoriamente será exibido na mesma linha>-->
     <p>Este &nbsp é &nbsp; um &nbsp; texto &nbsp;  separado</p> <!-- &nbsp; serve para criar um espaço vazio-->
     <p>Estes são caracteres especiais: &#33; &euro; &pound;  </p>
+    <p id="id">Este parágrafo tem um ID. O debaixo também e terá o seu valor alterado pelo Javascript.</p>
+    <!-- a tag id define um identificador único para o elemento. É possível manipular o elemento com JavaScript através do ID. -->
+    <p id="nome">Este parágrafo tem um ID.</p> <!-- a tag id define um identificador único para o elemento-->
+
+    <hgroup> <!-- a tag <hgroup> agrupa títulos relacionados-->
+        <h1>Grupo de Títulos</h1>
+        <h2>Subtítulo do Grupo</h2>
+        <h3>Outro Nível de Subtítulo</h3>
+    </hgroup>
+    <p>
+        Que tal a quebra de linha? <br> <!-- a tag <br> insere uma quebra de linha-->
+        É dessa forma que fazemos:<br>
+        Viu? Aqui está a quebra de linha.
+    </p>
+    <p>Texto em <b>negrito</b></p>
+    <p>Texto em <i>itálico</i></p>
+    <p>Texto <u>sublinhado</u></p>
+    <p>Texto com <sub>subscrito</sub></p>
+    <p>Texto com <sup>superescrito</sup></p>
+    <p>Texto <s>riscado</s></p>
+
+    <!-- Lista desordenada-->
+    <h2>Lista Desordenada</h2>
+    <ul>
+        <li>Item 1</li> <!-- a tag <li> define um item de lista-->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!-- Lista ordenada-->
+    <h2>Lista Ordenada</h2> 
+    <ol type="a"> <!-- a tag type define o tipo de numeração da lista--> <!-- As opções do type são: 1, a, A, i, I-->
+        <li>Primeiro</li> <!-- a tag <li> define um item de lista-->
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ol>
+    <!-- Lista descritiva -->
+    <h2>Lista Descritiva</h2>
+    <dl>
+        <dt>HTML</dt> <!-- a tag <dt> define o termo a ser descrito-->
+        <dd>Linguagem de marcação para criação de páginas web.</dd> <!-- a tag <dd> define a descrição do termo-->
+        <dt>CSS</dt>
+        <dd>Linguagem de estilo para estilização de páginas web.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para adicionar interatividade às páginas web.</dd>
+    </dl>
+    
+    <h2>Lista Desordenada com formas</h2>
+    <ul type="square"> <!-- a tag type define o tipo de marcador da lista--> <!-- As opções do type são: square e circle-->
+        <li>Item 1</li> <!-- a tag <li> define um item de lista-->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
 </body>
 </html>
 <!-- Comentário em HTML é feito desta forma. Lembre-se: comentários em HTML podem ser vistos pelos usuários. -->
